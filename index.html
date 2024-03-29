@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anderson Maschio">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script defer src="./scripts/script.js"></script>
+    <title>User Registration</title>
+</head>
+
+<body>
+    <main>
+        <section class="flex-items">
+            <figure>
+                <img src="./assets/icons/undraw_followers_re_6k3g.svg" alt="Icones de pessoas meramente ilustrativas">
+            </figure>
+
+            <form class="form" onsubmit="enviarDados(event)">
+                <div class="form-style">
+                    <label for="name">
+                        Informe o seu primeiro nome:
+                    </label>
+                    <input type="text" id="name" placeholder="Ex: Anderson">
+                </div>
+
+                <div class="form-style">
+                    <label for="email">
+                        Informe o seu melhor email:
+                    </label>
+                    <input type="email" id="email" placeholder="Ex: email@email.com">
+                </div>
+
+                <div class="form-style">
+                    <label for="age">
+                        Informe a sua idade:
+                    </label>
+                    <input type="number" id="age" placeholder="Ex: 23">
+                </div>
+
+                <div class="buttons">
+                    <button type="submit">
+                        Cadastrar
+                    </button>
+                    <button type="reset">
+                        Cancelar
+                    </button>
+                </div>
+
+            </form>
+        </section>
+
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Idade</th>
+                    </tr>  
+                </thead>
+                <tbody id="tableBodyList">
+
+                </tbody>
+              </table>
+        </section>
+    </main>
+</body>
+<link rel="stylesheet" href="./scripts/script.js">
+
+</html>
