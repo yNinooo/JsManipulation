@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<body>
+    <script>
+        var nota1, nota2, nota3, comparacao;
+
+        
+        while (!(nota1 >= 0 && nota1 <= 10)) {
+            nota1 = parseInt(prompt("Informe a primeira nota:"));
+            if (nota1 < 0 || nota1 > 10) {
+                alert("A nota deve estar entre 0 e 10");
+            }
+        }
+
+        while (!(nota2 >= 0 && nota2 <= 10)) {
+            nota2 = parseInt(prompt("Informe a segunda nota:"));
+            if (nota2 < 0 || nota2 > 10) {
+                alert("A nota deve estar entre 0 e 10");
+            }
+        }
+
+        while (!(nota3 >= 0 && nota3 <= 10)) {
+            nota3 = parseInt(prompt("Informe a terceira nota:"));
+            if (nota3 < 0 || nota3 > 10) {
+                alert("A nota deve estar entre 0 e 10");
+            }
+        }        
+
+        if (nota1 > nota2) {
+            comparacao = nota1;
+        } else {
+            comparacao = nota2;
+        }
+
+        if (comparacao < nota3) {
+            comparacao = nota3;
+        }
+
+        alert(`A maior nota foi: ${comparacao}`);
+
+        if (nota1 == nota2 && nota1 == nota3 && nota2 == nota3) {
+            alert("Aluno1, Aluno2 e Aluno3 colaram um do outro");
+        } else if (nota1 == nota2) {
+            alert("Aluno1 e Aluno2 colaram um do outro");
+        } else if (nota1 == nota3) {
+            alert("Aluno1 e Aluno3 colaram um do outro");
+        } else if (nota2 == nota3) {
+            alert("Aluno2 e Aluno3 colaram um do outro");
+        }
+    </script>
+</body>
+</html>

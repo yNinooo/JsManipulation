@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<body>
+    <script>
+        var nota1, nota2, nota3, media;
+        
+        while (!(nota1 >= 0 && nota1 <= 10)) {
+            nota1 = parseInt(prompt("Informe a primeira nota:"));
+            if (nota1 < 0 || nota1 > 10) {
+                alert("A nota deve estar entre 0 e 10");
+            }
+        }
+
+        while (!(nota2 >= 0 && nota2 <= 10)) {
+            nota2 = parseInt(prompt("Informe a segunda nota:"));
+            if (nota2 < 0 || nota2 > 10) {
+                alert("A nota deve estar entre 0 e 10");
+            }
+        }
+
+        while (!(nota3 >= 0 && nota3 <= 10)) {
+            nota3 = parseInt(prompt("Informe a terceira nota:"));
+            if (nota3 < 0 || nota3 > 10) {
+                alert("A nota deve estar entre 0 e 10");
+            }
+        }  
+
+        media = (nota1 + nota2 + nota3) / 3;
+        media = media.toFixed(2);
+
+        if (media <= 3) {
+            alert(`REPROVADO\nA sua nota final foi: ${media}`);
+        } else if (media <= 6) {
+            alert(`RECUPERAÇÃO\nA sua nota final foi: ${media}`);
+        }
+        else {
+            alert(`APROVADO\nA sua nota final foi: ${media}`);
+        }
+
+    </script>
+</body>
+</html>
